@@ -1,20 +1,48 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
+import Login from "../Login/Login";
+import {getTokenFromUrl} from "../../spotify";
+import SpotifyWebApi from "spotify-web-api-js";
+import Player from "../Player/Player";
+import {useDataLayerValue} from "../../DateLayer";
+
+const spotify = new SpotifyWebApi()
 
 function App() {
+  const [{ user, token }, dispatch] = useDataLayerValue()
+
+  useEffect(() => {
+    const tokenObject = getTokenFromUrl()
+    window.location.hash = ''
+    const _token = tokenObject.access_token
+
+    if (_token) {
+      dispatch({
+        type: 'SET_TOKEN',
+        payload: _token
+      })
+
+      spotify.setAccessToken(_token)
+
+      spotify.getMe().then(user => {
+
+        dispatch({
+          type: 'SET_USER',
+          payload: user
+        })
+      })
+    }
+  }, [])
+
   return (
-    <div className="App">
-      <h1>Building a Spotify clone!</h1>
-
-        {/* Spotify Logo */}
-        {/* Login with spotify button */}
-
+    <div className="app">
+      {
+        token
+          ? <Player spotify={spotify}/>
+          : <Login />
+      }
     </div>
   );
 }
 
 export default App;
-
-// Client ID 540455896e7542ce8a24b8a0ec3f9bb0
-
-// Client Secret a0881edf7ad14b9ca6a338940fcc05ba
