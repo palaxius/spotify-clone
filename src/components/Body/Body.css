@@ -3,5 +3,114 @@
     height: 100vh;
     padding: 30px;
     color: #fff;
+    overflow-y: overlay;
     background: rgb(91, 87, 115) linear-gradient(transparent, rgba(0, 0, 0, 1));
+}
+
+.body__info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body__info img {
+    height: 20vh;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__info-text {
+    flex: 1;
+}
+
+.body__info-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.body__info-text p {
+    font-size: 14px;
+}
+
+.body__songs {
+    margin: 20px -30px 150px -30px;
+}
+
+.body__icons {
+    display: flex;
+    align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.body__shuffle {
+    font-size: 80px !important;
+    margin: 20px 20px 20px 50px;
+    color: #1db954;
+}
+
+.body__shuffle:hover {
+    transition: .1s transform ease-in;
+    transform: scale(1.08);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section__title {
+    font-size: 36px;
+    margin: 70px 0 25px 20px;
+}
+
+.section__item {
+    height: 250px;
+    width: 175px;
+    background-color: #78847c;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.section__item:hover {
+    background-color: #0f0e0e;
+}
+
+.section__item h4 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.section__item-band {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.section__item img {
+    object-fit: cover;
+    height: 135px;
+    width: 135px;
+    margin-bottom: 10px;
+}
+
+.section__item-date {
+    margin-top: 10px;
+    color: #b3b3b3;
+    font-size: 12px;
 }

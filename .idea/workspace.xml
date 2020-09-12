@@ -10,28 +10,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabb4e82-7b46-45c4-81c4-c40eb8f8e56a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DateLayer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Body.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Body/Body.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Player/Player.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Player/Player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SidebarOption/SidebarOption.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SidebarOption/SidebarOption.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spotify.js" afterDir="false" />
+    <list default="true" id="aabb4e82-7b46-45c4-81c4-c40eb8f8e56a" name="Default Changelist" comment="Provided Spotify-API, made the logic for obtaining a user and a token and started work on the Player page (Sidebar, Body, Footer)">
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecentlyItem/RecentlyItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SongRow/SongRow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SongRow/SongRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TopArtist/TopTrack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TopTrack/TopTrack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DateLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Player/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SidebarOption/SidebarOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidebarOption/SidebarOption.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SidebarOption/SidebarOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidebarOption/SidebarOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/spotify.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,14 +60,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\spotify-clone\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\spotify-clone\src\components" />
       <recent name="D:\Projects\spotify-clone\src\components\Player" />
@@ -82,8 +91,18 @@
       <updated>1599756540639</updated>
       <workItem from="1599756543886" duration="577000" />
       <workItem from="1599757174594" duration="6438000" />
-      <workItem from="1599810181655" duration="8921000" />
+      <workItem from="1599810181655" duration="9482000" />
+      <workItem from="1599832271495" duration="13623000" />
+      <workItem from="1599890095896" duration="15319000" />
     </task>
+    <task id="LOCAL-00001" summary="Provided Spotify-API, made the logic for obtaining a user and a token and started work on the Player page (Sidebar, Body, Footer)">
+      <created>1599819539316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599819539316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,26 +120,42 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Provided Spotify-API, made the logic for obtaining a user and a token and started work on the Player page (Sidebar, Body, Footer)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Provided Spotify-API, made the logic for obtaining a user and a token and started work on the Player page (Sidebar, Body, Footer)" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="541" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599758601549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="541" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1599758601549" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599758554249">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599901943824">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599758554249" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599901943824" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1599819557846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1599819557846" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1599762018911">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599762018911" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599819560487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599819560487" />
     <state x="464" y="18" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599812049140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="464" y="18" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1599812049140" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599819156261">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1599843531896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599819156261" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599843531896" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599905360065">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599905360065" />
   </component>
 </project>

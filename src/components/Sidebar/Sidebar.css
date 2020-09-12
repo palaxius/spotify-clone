@@ -13,3 +13,10 @@
     height: 70px;
     padding: 10px;
 }
+
+.sidebar__title {
+    margin-left: 20px;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
