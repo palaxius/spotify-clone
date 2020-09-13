@@ -101,7 +101,7 @@ const Footer = ({spotify}) => {
         <RepeatIcon className='footer__green' />
         <SkipPreviousIcon
           className='footer__icon'
-          onClick={skipNext}
+          onClick={skipPrevious}
         />
         {playing ? (
           <PauseCircleOutlineIcon
@@ -118,7 +118,7 @@ const Footer = ({spotify}) => {
         )}
         <SkipNextIcon
           className='footer__icon'
-          onClick={skipPrevious}
+          onClick={skipNext}
         />
         <ShuffleIcon className='footer__green'/>
       </div>

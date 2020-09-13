@@ -8,10 +8,9 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import SongRow from "../SongRow/SongRow";
 import RecentlyItem from "../RecentlyItem/RecentlyItem";
 import TopTrack from "../TopTrack/TopTrack";
-import TopArtist from "../TopArtist/TopTrack";
 
 const Body = ({ spotify }) => {
-  const [{ discover_weekly, recently_played, top_tracks, top_artists }, dispatch] = useDataLayerValue()
+  const [{ discover_weekly, recently_played, top_tracks }, dispatch] = useDataLayerValue()
 
   const playPlaylist = (id) => {
     spotify
@@ -29,7 +28,7 @@ const Body = ({ spotify }) => {
             payload: true,
           });
         });
-      }).catch(err => alert(`Player command failed: Premium required \nYou must have a premium account to play music`))
+      }).catch(err => alert(`You must have a premium account to play music \nAnd use the Spotify app as a remote \nConnect both devices to the same network and log in to Spotify`))
   };
 
   const playSong = (id) => {
@@ -48,28 +47,12 @@ const Body = ({ spotify }) => {
             payload: true,
           });
         });
-      }).catch(err => alert(`Player command failed: Premium required \nYou must have a premium account to play music`))
+      }).catch(err => alert(`You must have a premium account to play music \nAnd use the Spotify app as a remote \nConnect both devices to the same network and log in to Spotify`))
   };
 
   return (
     <div className='body'>
       <Header spotify={spotify}/>
-
-      {
-        top_artists && top_artists.items.length ?
-        <div className="section">
-          <h2 className='section__title'>Your top artists</h2>
-          <div className='wrapper'>
-            {
-              top_artists && top_artists.items && top_artists.items.map((item) =>
-                (
-                <TopArtist playSong={playSong} item={item} key={Math.random()}/>
-              ))
-            }
-          </div>
-        </div>
-        : null
-      }
 
       {
         top_tracks && top_tracks.items && top_tracks.items.length &&
